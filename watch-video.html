@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Watch video</title>
+   <link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/thumbs/video-icon/video-icon-1.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <header class="header">
+   
+      <section class="flex">
+   
+         <a href="index.html" class="logo">Js_Educa.</a>
+   
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+   
+         <div class="profile">
+            <img src="images/sonu.png" class="image" alt="">
+            <h3 class="name">Sannu Kumar Ojha</h3>
+            <p class="role">Student</p>
+            <a href="profile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">login</a>
+               <a href="register.html" class="option-btn">register</a>
+            </div>
+         </div>
+   
+      </section>
+   
+   </header>   
+   
+   <div class="side-bar">
+   
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+   
+      <div class="profile">
+         <img src="images/sonu.png" class="image" alt="">
+         <h3 class="name">Sannu Kumar Ojha</h3>
+         <p class="role">Student</p>
+         <a href="profile.html" class="btn">view profile</a>
+      </div>
+   
+      <nav class="navbar">
+         <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+         <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+         <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+      </nav>
+   
+   </div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <video src="images/vid-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
+      </div>
+      <h3 class="title">Complete HTML Tutorial with (part 01)</h3>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>22-06-2023</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>67 likes</span></p>
+      </div>
+      <div class="tutor">
+         <img src="https://media.licdn.com/dms/image/C5603AQH_okRV6IlFSw/profile-displayphoto-shrink_400_400/0/1619438954619?e=1693440000&v=beta&t=XZBzFdLfGrAIwDhwoN9gYFIXcKWUPXgFJ7D9VcrpxlE" alt="">
+         <div>
+            <h3>Java Is Awesome</h3>
+            <span>5.42k subscribers</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">view playlist</a>
+         <button><i class="far fa-heart"></i><span>like</span></button>
+      </form>
+      <p class="description">
+         Hey Everyone this is introduction video of my complete HTML and CSS Course in Hindi. In this course we will learn everything you need to know about HTML and CSS. This course includes all modern topics such as flexbox, grids, sass. 
+         Overall Content of this course is
+         SETUP TOOLS
+         HTML
+         CSS BASICS
+         CSS POSITIONS AND FLOAT LAYOUT
+         CREATE  WEBSITE USING FLOAT 
+         RESPONSIVE WEB DESIGN
+         FLEXBOX
+         CREATE WEBSITE USING FLEXBOX
+         CSS ANIMATIONS
+         CSS GRID 
+         CREATE WEBSITE USING GRID
+         SASS
+         CREATE WEBSITE USING SASS
+         WEBSITE DEPLOYMENT
+         USE FIGMA TO CREATE UI DESIGNS
+         I hope you will enjoy this course.
+      </p>
+   </div>
+
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">5 comments</h1>
+
+   <form action="" class="add-comment">
+      <h3>add comments</h3>
+      <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">comments</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3>Ankit Kumar</h3>
+               <span>23-06-2023</span>
+            </div>
+         </div>
+         <div class="comment-box">Nice Video All the best ❤️.</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Rinku Jha</h3>
+               <span>06-06-2023</span>
+            </div>
+         </div>
+         <div class="comment-box">Super Video All the best ❤️.</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Mishra Jee</h3>
+               <span>09-05-2023</span>
+            </div>
+         </div>
+         <div class="comment-box">Super Video All the best ❤️.</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Satyam jha</h3>
+               <span>06-05-2023</span>
+            </div>
+         </div>
+         <div class="comment-box">Super Video All the best ❤️.</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="https://media.licdn.com/dms/image/D5635AQFrrrHUTp9G4Q/profile-framedphoto-shrink_400_400/0/1685172224909?e=1688378400&v=beta&t=XXELeOy56KV6muszvRj-aSsehhsOUxC1Ij9XUGgcQ-o" alt="">
+            <div>
+               <h3>Sannu Kumar Ojha</h3>
+               <span>06-05-2023</span>
+            </div>
+         </div>
+         <div class="comment-box">Super Video All the best ❤️.</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Priya Gupta</h3>
+               <span>22-04-2023</span>
+            </div>
+         </div>
+         <div class="comment-box">thanks for the tutorial!
+
+            how to download source code file?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2022 by <span>Js_Educa.</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+   
+</body>
+</html>
